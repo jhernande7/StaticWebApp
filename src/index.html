@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--NOTE: ALL PICTURES ARE FROM GOOGLE AND ALS GETTY IMAGES -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale-1">
+    <title>Static Web Page with Bootstrap</title>
+    <!--the following cdn is for connecting to bootstrap and being able to use their css styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        .banner-image {
+            width:100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .banner-container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .banner-logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 150px;
+        }
+        .intro {
+            font-weight: bold;
+        }
+        .text-container {
+            text-align: right;
+        }
+        .container-fluid {
+            padding-left: 0;
+        }
+        .col-md-4 img {
+            width: 400px;
+            margin-right: 20px;
+        }
+        .imag {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+<!--Banner logo-->
+<div class="container-fluid banner-container p-0">
+    <img src="Pics/gaming-banner-for-games-with-glitch-effect-neon-light-on-text-illustration-design-free-vector.jpg"
+         alt="banner logo" class="banner-image">
+    <img src="Pics/gamer-gaming-logo-vector-47133848.jpg" alt="small logo" class="banner-logo">
+</div>
+<!--bootstrap navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Landing Page</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class="navbar-nav ms-auto">
+        <div class="collapse navbar-collapse" id="navbarNav">
+           <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home Page</a> </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="aboutUS.html">About Us</a> </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="ContactUS.html">Contact Us</a></li>
+            </ul>
+        </div>
+        </ul>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<!--the following cdn is for connecting to bootstrap and being able to use their javascript-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<div class="intro">
+    <p1>
+        Welcome to Gaming Mouse Co.
+    </p1>
+</div>
+
+<div class="conatiner-fluid mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="Pics/360_F_313067161_QYdVuIedTcMJKs9JkdPgsM5PlycF018H.jpg" class="img-fluid" alt="
+                        gaming mouse picture">
+        </div>
+        <div class="col-md-4 Text2">
+            <div class="col-md-8 text-container">
+                <h2>Innovation.</h2>
+                <p>Become one of the few greatest gamers of all time with our innovated gaming mice. Here at Gaming Mouse
+                Co. we specially design and craft our mice for pro esports competative gamers. You too can own these
+                legnadary mice and dominate the virutal playing field.</p>
+            </div>
+        </div>
+        <div class="col-md-4 imag">
+            <img src="Pics/0oz6kddj.jpg" class="img-fluid" alt="gaming mouse 4">
+        </div>
+    </div>
+</div>
+
+
+<!-- Bootstrap poppers and JS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
